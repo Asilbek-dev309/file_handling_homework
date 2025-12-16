@@ -1,10 +1,9 @@
+f=open('a.txt','r')
+a=f.read()
+s=[]
 def main(data:str):
-    """
-    The data is from the file. Return data as a list type.
-    Args:
-        data: str
-    Returns:
-        list: return answer
-    """
-
-# Read data from file
+    for i in a:
+        if i.isdigit():
+            s.append(int(i))
+print(main(str))
+print(s)
