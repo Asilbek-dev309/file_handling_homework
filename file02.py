@@ -1,10 +1,8 @@
+a=open('data02.txt')
+b=a.read()
 def main(data:str):
-    """
-    The data is from the file. Return number of characters in the file.
-    Args:
-        data: str
-    Returns:
-        int: return answer
-    """
-
-# Read data from file
+    c=0
+    for i in b:
+        c+=len(i)
+    return c
+print(main(str))
