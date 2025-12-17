@@ -1,10 +1,9 @@
+a=open('data09.txt')
+b=a.read()
 def main(data:str):
-    """
-    The data is from the file. Find the smallest of the numeric characters.
-    Args:
-        data: str
-    Returns:
-        int: return answer
-    """
-
-# Read data from file
+    c=[]
+    for i in b:
+        if i.isdigit():
+            c+=[int(i)]
+    return min(c)
+print(main(str))
