@@ -1,10 +1,12 @@
+a=open('data05.txt')
+b=a.read()
 def main(data:str):
-    """
-    The data is from the file. Find the number of digital and str(non-digital) data and return as list type.
-    Args:
-        data: str
-    Returns:
-        list: return answer
-    """
-    
-# Read data from file
+    c=[]
+    d=[]
+    for i in b:
+        if i.isdigit():
+            c+=[i]
+        else:
+            d+=[i]
+    return [len(c),len(d)]
+print(main(str))
