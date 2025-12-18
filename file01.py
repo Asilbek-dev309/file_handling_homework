@@ -1,4 +1,4 @@
-f=open('a.txt','r')
+f=open('data01.txt','r')
 a=f.read()
 s=[]
 def main(data:str):
